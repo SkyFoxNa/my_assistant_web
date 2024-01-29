@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Набока Артем Анатольович" />
+<title>Домашній помічник</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Головна сторінка">
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="/themes/main.css?v=39" >
+<link rel="stylesheet" type="text/css" href="/themes/media.css?v=39">
+</head>
+<body>
+<section  class="body js__metapage " data-page="category">
+	<section class="header">
+		<section class="header--overhead">
+			<div class="header--overhead__inner">
+				<div class="header--overhead--inner__left">
+					<div class="menu--chapters">
+						<div class="menu--chapters__item " >
+							<a class="menu--chapters__link" href="/">Головна сторінка</a>
+						</div>
+						<div class="menu--chapters__item " >
+							<a class="menu--chapters__link" href="/add_contact">Додати контакт</a>
+						</div>
+						<div class="menu--chapters__item " >
+							<a class="menu--chapters__link" href="/show_contact">Перегляд контактів</a>
+						</div>
+						<div class="menu--chapters__item " >
+							<a class="menu--chapters__link" href="/blog">Блог</a>
+						</div>
+					</div>
+					<div class="menu--chapters--mobile">
+
+					</div>
+				</div>
+					<div class="header--overhead--inner__right">
+						<a href="tel:+380506962013" class="phones">Тел. +38 (068) 901 18 79</a>
+					</div>
+				</div>
+		</section>
+
+	<section class="header--centerhead">
+			<div class="header--centerhead__inner">
+					<div class="header--centerhead--inner__logo">
+						<a href="/"><img alt="Домашній помічник" src="/img/aw.jpg"></a>
+							<div class="header--centerhead--inner__column1">Домашній помічник</div>
+					</div>
+			</div>
+	</section>
+
+	</section>
+		</section>
+
+
+
+	<section class="under--header--slider">
+	</section>
+
+	<section class="content--center--main ">
+
+	<div class="breadcrumbs breads">
+
+		</div>
+			<div class="content--center--inner">
+				<section class="content--center--inner__left">
+					<div class="content--center--inner--left__column">
+						<div class="content--left__deliver">
+						<section class="fnc--search" >
+							<div class="content--left__deliver">
+
+	<section class="fnc--column--catalog">
+
+		<div class="fnc--column--catalog__container">
+
+			<div onClick="location='/93'" class="fnc--column--category__active0"
+				><a>Блог</a>
+			</div>
+
+			<div onClick="location='/'" class="fnc--column--category0"
+				><a href="/">Головна сторінка</a>
+			</div>
+
+			<div onClick="location='/add_contact'" class="fnc--column--category0"
+				><a href="/add_contact">Додати контакт</a>
+			</div>
+
+			<div onClick="location='/show_contact'" class="fnc--column--category0"
+				><a href="/show_contact">Перегляд контактів</a>
+			</div>
+
+			<div onClick="location='/blog'" class="fnc--column--category0"
+				><a href="/blog">Блог</a>
+			</div>
+		</div>
+	</section>
+
+					</div>
+
+				</div>
+			</section>
+			<section class="content--center--inner__center">
+				<div class="content--center--inner--center__column">
+					<section class="fnc--center--catalog">
+						<div class="fnc--center--catalog__container">
+					</section>
+		<section class="fnc--itemshow--container">
+
+		</section>
+					<div class="js__list--container fnc--products--listVer">
+						{% for blog in blogs %}
+						<div class="fnc--products--listitem">
+
+							<div class="fnc--products--listitem__price itempage--center--prices">
+								<div class="roz-price"><strong>{{ blog.title }}</strong></div>
+							</div>
+							<div class="fnc--products--listitem__main">
+								<div class="fnc--products--listitem__name">
+									<a >{{ blog.date }}   {{ blog.author }}</a>
+								</div>
+							</div>
+							<div class="fnc--products--listitem__price itempage--center--prices">
+								<div class="roz-price"><div>{{ blog.text }}</div></div>
+							</div>
+
+							<div class="fnc--products--listitem__buy">
+								<button type="button" class="js__add--tocart" data-id="2786">Редагувати</button>
+							</div>
+							<div class="fnc--products--listitem__buy">
+								<button type="button" class="js__add--tocart" data-id="2786">Видалити</button>
+							</div>
+						</div>
+
+				{% endfor %}
+				</div>
+			</section>
+
+		<div class="content--center__separator content--center--separator--5">
+		</div>
+					<div class="content--center__separator content--center--separator--7">
+					</div></div></section>
+		</div>
+	</section>
+
+	<section class="content--footer">
+		<div class="content--footer__inner">
+		<div class="footer">
+		<div class="footer__container">
+		<div class="footer__firstcolumn">
+		<div class="logo">
+			<p class="logo__title">Домашній помічник</p>
+		</div>
+		</div>
+		<div class="footer__secondcolumn">
+		<div class="footer__secondcolumn-column1">
+					<div class="menu--chapters">
+					<div class="menu--chapters__item " >
+			<a class="menu--chapters__link" href="/">Головна сторінка</a>
+		</div>
+						<div class="menu--chapters__item " >
+			<a class="menu--chapters__link" href="/add_contact">Додати контакт</a>
+		</div>
+						<div class="menu--chapters__item " >
+			<a class="menu--chapters__link" href="/show_contact">Перегляд контактів</a>
+		</div>
+						<div class="menu--chapters__item " >
+			<a class="menu--chapters__link" href="/blog">Блог</a>
+		</div>
+						<div class="menu--chapters__item " >
+			<a class="menu--chapters__link" href="/contact">Контакти</a>
+		</div>
+				</div>
+	<div class="menu--chapters--mobile"><div class="js__show--mobile--menu">Меню</div></div>		</div>
+
+		<ul class="footer__links">
+		<li><a class="footer__link footer__link-phone" href="tel:+380506962013">+38 (068) 901 18 79</a></li>
+
+		</ul>	</div>
+		</div>
+		</div>
+		</div>
+		<div class="line">
+			<div class="line__container">
+				<div class="line__text">
+					<p>ВСЕ ПРАВА ЗАЩИЩЕНЫ 2024. &laquo;Sky&raquo;</p>
+				</div>
+			</div>
+		</div>
+
+	</section>
+</section>
+
+
+
+</body>
